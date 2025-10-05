@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IIT Comp Showcase</title>
+  <link rel="preload" as="video" href="loader.mp4">
+  <link rel="preload" as="video" href="homepage.mp4">
+  <link rel="preload" as="video" href="parallax animation.mp4">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader" aria-hidden="true">
+    <video src="loader.mp4" autoplay muted playsinline></video>
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">ANIMAX</div>
+      <nav>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#cards">Highlights</a></li>
+          <li><a href="#stats">Stats</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#customers">Clients</a></li>
+          <li><a href="#portfolio">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="themeToggle" class="btn btn-primary small" aria-label="Toggle dark mode" title="Toggle theme">◐</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero with Parallax Video -->
+  <section id="hero" class="hero section-observe">
+    <div class="hero-media">
+      <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+      <video class="hero-video" src="homepage.mp4" autoplay muted loop playsinline></video>
+      <video class="parallax-video" src="parallax animation.mp4" autoplay muted loop playsinline></video>
+    </div>
+  </section>
+
+  <!-- Customers / Clients -->
+  <section id="customers" class="customers section-observe">
+    <div class="container">
+      <div class="section-head">
+        <h2>Trusted by Teams</h2>
+        <p>Moments from our customer stories.</p>
+      </div>
+      <div class="customers-wrap pop">
+        <video src="customer-section.mp4" muted loop playsinline preload="metadata" data-hover-play></video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features / Services -->
+  <section id="services" class="services section-observe">
+    <div class="container">
+      <div class="section-head">
+        <h2>Features & Services</h2>
+        <p>From prototypes to production-ready experiences.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card pop tilt">
+          <div class="media">
+            <video src="features-services.mp4" muted loop playsinline preload="metadata" data-hover-play></video>
+          </div>
+          <h3>Interactive Features</h3>
+          <p>Rich UI behaviors with delightful micro-interactions.</p>
+        </div>
+        <div class="service-card pop tilt">
+          <div class="media">
+            <video src="scroll and pop up.mp4" muted loop playsinline preload="metadata" data-hover-play></video>
+          </div>
+          <h3>Scroll Animations</h3>
+          <p>Reveal content gracefully as users explore.</p>
+        </div>
+        <div class="service-card pop tilt">
+          <div class="media">
+            <video src="ripple effect.mp4" muted loop playsinline preload="metadata" data-hover-play></video>
+          </div>
+          <h3>Actionable CTAs</h3>
+          <p>Crisp feedback and accessible controls that convert.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cards Grid -->
+  <section id="cards" class="cards section-observe">
+    <div class="container">
+      <div class="section-head">
+        <h2>Highlights</h2>
+        <p>Key capabilities at a glance.</p>
+      </div>
+      <div class="card-grid">
+        <figure class="card-item pop tilt">
+          <img src="cards.png" alt="Feature cards">
+          <figcaption>Modular components for rapid builds</figcaption>
+        </figure>
+        <figure class="card-item pop tilt">
+          <img src="graph.png" alt="Analytics graph">
+          <figcaption>Insights with performant visuals</figcaption>
+        </figure>
+        <figure class="card-item pop tilt">
+          <img src="stats.png" alt="Stats tiles">
+          <figcaption>Data-driven decisions made simple</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Counter -->
+  <section id="stats" class="stats section-observe">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat pop">
+          <div class="num" data-count="120">0</div>
+          <div class="label">Projects</div>
+        </div>
+        <div class="stat pop">
+          <div class="num" data-count="48">0</div>
+          <div class="label">Clients</div>
+        </div>
+        <div class="stat pop">
+          <div class="num" data-count="12">0</div>
+          <div class="label">Awards</div>
+        </div>
+        <div class="stat pop">
+          <div class="num" data-count="99">0</div>
+          <div class="label">Satisfaction (%)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carousel -->
+  <section id="carousel" class="carousel section-observe">
+    <div class="container">
+      <div class="section-head">
+        <h2>Carousel Showcase</h2>
+        <p>Swipe or click to explore interactions.</p>
+      </div>
+      <div class="slider" data-slider>
+        <button class="slide-btn prev" aria-label="Previous">‹</button>
+        <div class="slides">
+          <div class="slide">
+            <video src="caraousel switch.mp4" autoplay muted loop playsinline></video>
+          </div>
+          <div class="slide">
+            <video src="showcase work.mp4" autoplay muted loop playsinline></video>
+          </div>
+          <div class="slide">
+            <video src="striking - any simple object can be used.mp4" autoplay muted loop playsinline></video>
+          </div>
+        </div>
+        <button class="slide-btn next" aria-label="Next">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="testimonials section-observe">
+    <div class="container">
+      <div class="section-head">
+        <h2>What Clients Say</h2>
+      </div>
+      <div class="testimonials-slider" data-slider data-autoplay="6000">
+        <div class="slides">
+          <blockquote class="testimonial slide pop">
+            <p>“The animations elevated our brand experience.”</p>
+            <footer>— Product Lead</footer>
+            <video src="testimonials.mp4" autoplay muted loop playsinline></video>
+          </blockquote>
+          <blockquote class="testimonial slide pop">
+            <p>“Fast, responsive, and engaging UI. Loved it.”</p>
+            <footer>— Marketing Head</footer>
+            <video src="customer-section.mp4" autoplay muted loop playsinline></video>
+          </blockquote>
+        </div>
+        <div class="dots" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio / Work with filters -->
+  <section id="portfolio" class="portfolio section-observe">
+    <div class="container">
+      <div class="section-head">
+        <h2>Showcase Work</h2>
+        <div class="filters" role="tablist">
+          <button class="filter-btn active" data-filter="all" role="tab">All</button>
+          <button class="filter-btn" data-filter="video" role="tab">Video</button>
+          <button class="filter-btn" data-filter="image" role="tab">Image</button>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="item pop" data-type="video">
+          <video src="showcase work.mp4" muted loop playsinline preload="metadata" data-hover-play></video>
+        </div>
+        <div class="item pop" data-type="image">
+          <img src="graph.png" alt="Graph visualization">
+        </div>
+        <div class="item pop" data-type="video">
+          <video src="scroll and pop up.mp4" muted loop playsinline preload="metadata" data-hover-play></video>
+        </div>
+        <div class="item pop" data-type="image">
+          <img src="cards.png" alt="Cards layout">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section id="cta" class="cta section-observe">
+    <div class="container">
+      <h2>Ready to craft your next experience?</h2>
+      <button id="contactBtn" class="btn btn-accent ripple magnetic" data-ripple>Contact Us</button>
+    </div>
+  </section>
+
+  <!-- Contact / Footer -->
+  <footer id="contact" class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> ANIMAX. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox (for portfolio/media preview) -->
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+    <button class="lightbox-close" aria-label="Close">×</button>
+    <div class="lightbox-content" id="lightboxContent"></div>
+  </div>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

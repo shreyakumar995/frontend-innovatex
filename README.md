@@ -31,3 +31,6 @@ Implemented Features (10+)
 - Cursor-glow spotlight over hero
 - Back-to-top floating button
 - Media Lightbox for portfolio items
+
+  
+AI tool which have been used is cursor
